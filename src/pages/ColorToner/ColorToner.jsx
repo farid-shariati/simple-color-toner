@@ -62,7 +62,7 @@ const ColorToner = () => {
           <h3 style={{ marginRight: "55px" }}>Shades</h3>
           <RangeSlider value={rangeValue} onChange={handleChange} />
         </div>
-        <ColorsGrid colors={colors}/>
+        <ColorsGrid colors={colors} />
       </div>
     </div>
   );

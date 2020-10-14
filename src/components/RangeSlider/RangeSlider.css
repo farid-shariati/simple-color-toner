@@ -1,3 +1,4 @@
+
 .wrapper {
     display: flex;
     width: 350px;
@@ -35,6 +36,7 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   background: #ffffff;
   cursor: pointer;
+  margin-top: -14px; 
 }
 
 /* firefox */
