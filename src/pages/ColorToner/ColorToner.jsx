@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ColorCard from "../../components/ColorCard/ColorCard";
 import RangeSlider from "../../components/RangeSlider/RangeSlider";
-import "./style.css";
+import "./ColorToner.css";
 import lightenColor from "../../utils/lightenColor";
+import ColorsGrid from "../../components/ColorsGrid";
 
 const ColorToner = () => {
   const [colors, setColors] = useState([]);
@@ -48,7 +48,7 @@ const ColorToner = () => {
         <input
           className="input"
           type="text"
-          placeholder="#?????? or #???"
+          placeholder="#FFFFFF"
           value={colorHex}
           onChange={(e) => setColorHex(e.target.value)}
         />
@@ -62,11 +62,7 @@ const ColorToner = () => {
           <h3 style={{ marginRight: "55px" }}>Shades</h3>
           <RangeSlider value={rangeValue} onChange={handleChange} />
         </div>
-        <div className="cards">
-          {colors.map((item, index) => (
-            <ColorCard key={index} backgroundColor={item} />
-          ))}
-        </div>
+        <ColorsGrid colors={colors}/>
       </div>
     </div>
   );

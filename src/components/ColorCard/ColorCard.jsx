@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./ColorCard.css";
 
 const ColorCard = ({ backgroundColor }) => {
   return (
