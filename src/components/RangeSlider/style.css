@@ -1,0 +1,59 @@
+.wrapper {
+    display: flex;
+    width: 350px;
+}
+
+/* general */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 500px;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+
+/* chrome */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #d3d3d3;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 3px 3px 3px #727272, 0px 3px 20px #bbbbbb;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* firefox */
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #d3d3d3;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 3px 3px 3px #727272, 0px 3px 20px #bbbbbb;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+
+
